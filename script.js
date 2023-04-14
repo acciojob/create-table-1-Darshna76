@@ -1,18 +1,11 @@
 function insert_Row() {
     //Write your code here
 	var tabel=document.getElementById("sampleTable");
-	var row=document.createElement("tr");
-	var r1=document.createElement("td");
-	var r2=document.createElement("td");
-	r1.innerText="New Cell1";
-	r2.innerText="New Cell2"
-	row.appendChild(r1);
-	row.appendChild(r2);
-	tabel.appendChild(row);
-	// tabel.innerHtml=`<tr><td>New Cell1</td><td>New Cell2</></t>`
+	var row=tabel.insertRow(0);
+	var c1=row.insertCell(0);
+	var c2=row.insertCell(1);
+	c1.innerHTML = "New Cell1 ";
+  c2.innerHTML = "New Cell2";
 	
 	
-	
-  
-  
 }
